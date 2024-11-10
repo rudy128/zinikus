@@ -4,7 +4,7 @@ import {navLinks} from '../constants/index'
 
 const Navbar = () => {
     return (
-    <nav className='w-full flex py-6 sticky z-[10] backdrop-blur-2xl justify-between items-center'>
+    <nav className='w-full flex py-6 sticky z-[10] backdrop-blur-md justify-between items-center'>
         <img src={logo} className='w-[200px]' alt="Zinikus_logo" />
         <ul className='list-none sm:flex hodden justify-center items-center flex-1'>
             {navLinks.map((nav,index)=>(

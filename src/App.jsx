@@ -1,6 +1,9 @@
 import styles from "./style"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import { Footer } from "./components/Footer"
+import Buisness from "./components/Buisness"
+import {Partners, Testimonials} from "./components/Partners"
 
 function App() {
 
@@ -16,15 +19,18 @@ function App() {
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          Stats
+          <Buisness />
+          {/* Stats
           Business
           Billing
           Stats
           CardDeal
           Testimonials
           Clients
-          CTA
-          Footer
+          CTA */}
+          <Testimonials />
+          <Partners />
+          <Footer />
         </div>
       </div>
     </div>

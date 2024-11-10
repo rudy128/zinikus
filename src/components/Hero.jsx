@@ -4,7 +4,7 @@ import styles from '../style'
 
 const Hero = () => {
   return (
-    <div className='flex justify-center items-center w-full px-6 my-6'>
+    <section className='flex justify-center items-center w-full px-6 my-12'>
         <div className='flex flex-col justify-evenly w-full'>
             <h1 className='flex-1  font-poppins font-semibold ss:text-[72px] text-[72px]'>Engineering
                 <span className='text-gradient'> Robots</span>
@@ -24,7 +24,7 @@ const Hero = () => {
             <div className='absolute z-[0] w-[90%] h-[90%] right-20 bottom-20 blue__gradient' />
 
         </div>
-    </div>
+    </section>
   )
 }
 
