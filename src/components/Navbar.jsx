@@ -10,7 +10,7 @@ const Navbar = () => {
             {navLinks.map((nav,index)=>(
                 <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px]`}>
                     <a href={`#${nav.id}`}>
-                        <button className='p-4 border-[2px] rounded-full mx-1 hover:bg-purple-800'>{nav.title}</button>
+                        <button className='p-4 border-[2px] border-gray-700 rounded-full mx-1 hover:bg-purple-800'>{nav.title}</button>
                     </a>
                 </li>
             ))}
