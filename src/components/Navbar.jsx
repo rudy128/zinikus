@@ -1,21 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import {navLinks} from '../constants/index'
+import close from '../assets/close.svg'
+import menu from '../assets/menu.svg'
 
 const Navbar = () => {
+    const path = window.location.pathname
+    const [toggle, setToggle] = useState(false)
     return (
     <nav className='w-full flex py-6 sticky z-[10] backdrop-blur-md justify-between items-center'>
         <img src={logo} className='w-[200px]' alt="Zinikus_logo" />
-        <ul className='list-none sm:flex hodden justify-center items-center flex-1'>
+        <ul className='list-none md:flex hidden justify-center items-center'>
             {navLinks.map((nav,index)=>(
                 <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px]`}>
-                    <a href={`#${nav.id}`}>
-                        <button className='p-4 border-[2px] border-gray-700 rounded-full mx-1 hover:bg-purple-800'>{nav.title}</button>
+                    <a href={`${nav.link}`}>
+                        <button className={`p-4 border-[2px] border-gray-700 rounded-lg mx-1 hover:bg-purple-800 ${path===nav.link ? 'bg-purple-800' : ''}`}>{nav.title}</button>
                     </a>
                 </li>
             ))}
         </ul>
-        <button className={`bg-purple-800 rounded-full p-4 hover:bg-purple-900`}>Get in Touch!</button>
+        <div className='md:hidden flex flex-1 justify-end items-center'>
+            <img 
+                src={toggle ? close : menu} 
+                alt="menu" 
+                className='w-[28px] h-[28px] object-contain' 
+                onClick={()=> setToggle((prev)=>!prev)}
+            />
+            <div 
+                className={`${toggle ? 'flex' : 'hidden'} bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl`}
+            >
+                        <ul className='list-none w-full h-full flex flex-col gap-y-2 justify-center'>
+                            {navLinks.map((nav,index)=>(
+                                <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px]`}>
+                                    <a href={`${nav.link}`}>
+                                        <button className={`p-4 w-full rounded-md hover:bg-purple-900 ${path===nav.link ? 'bg-purple-800' : ''}`}>{nav.title}</button>
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+            </div>
+        </div>
     </nav>
   )
 }
