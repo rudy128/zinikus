@@ -234,3 +234,63 @@
     overflow: hidden;
   }
 }
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);  /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(0);     /* End at the original position */
+  }
+}
+
+/* Apply the animation to the div */
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards; /* 1s duration, ease-out timing, preserve final state */
+}
+
+.hero-text, .hero-purple, .hero-paragraph{
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+.hero-purple{
+  animation-delay: 1.2s;
+}
+
+.hero-paragraph{
+  animation-delay: 1.4s;
+}
+
+
+@keyframes showContent {
+  to{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.appearScroll {
+  opacity: 0;
+  transform: scale(0.5);  Initial state is scaled down
+  transition: opacity 1s, transform 1s;
+}
+
+.animate-appear {
+  animation: appear 1s forwards;
+}
+ */

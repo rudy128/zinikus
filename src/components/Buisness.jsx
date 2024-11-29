@@ -9,7 +9,7 @@ const Buisness = () => {
   return (
   <>
     <section className={`${layout.sectionReverse} flex-col-reverse`}>
-      <div className={layout.sectionImgReverse}>
+      <div className={`${layout.sectionImgReverse}`}>
         <img src={zeno1} alt="" className='w-[80%] h-[90%] relative z-[5]' />
         
         <div className='absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient' />
@@ -21,7 +21,6 @@ const Buisness = () => {
         <p className={`${styles.paragraph}`}>ZENO, the Advanced Lobby Robot, revolutionizes hospitality with 24/7 support, autonomous navigation, and multilingual communication. By automating routine tasks and gathering valuable customer insights, it boosts efficiency and enhances visitor interactions. A true innovation, ZENO sets a new standard for smart, seamless service.</p>
       </div>
     </section>
-
     <section className={`${layout.sectionReverse} flex-col`}>
       <div className={`${layout.sectionInfo} gap-y-12`}>
         <h2 className={`${styles.heading2}`}>Redefining Workplace Efficiency with ZINI</h2>

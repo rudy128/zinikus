@@ -3,14 +3,15 @@ import logo from '../assets/logo.png'
 import {navLinks} from '../constants/index'
 import close from '../assets/close.svg'
 import menu from '../assets/menu.svg'
+import styles from '../style'
 
 const Navbar = () => {
     const path = window.location.pathname
     const [toggle, setToggle] = useState(false)
     return (
-    <nav className='w-full flex py-6 sticky z-[10] backdrop-blur-md justify-between items-center'>
+    <nav className={`${styles.paddingX} border-b rounded-lg ${styles.flexCenter} w-full py-6 sticky z-[100] backdrop-blur-md justify-between `}>
         <img src={logo} className='w-[200px]' alt="Zinikus_logo" />
-        <ul className='list-none md:flex hidden justify-center items-center'>
+        <ul className='list-none md:flex hidden justify-center items-center slide-in-right'>
             {navLinks.map((nav,index)=>(
                 <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px]`}>
                     <a href={`${nav.link}`}>
