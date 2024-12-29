@@ -6,6 +6,7 @@ import Instagram from '@/app/assets/instagram.svg'
 import Youtube from '@/app/assets/youtube.svg'
 import Twitter from '@/app/assets/twitter.svg'
 import Linkedin from '@/app/assets/linkedin.svg'
+import logo from '@/app/assets/logo.svg'
 
 const Footer = () => {
     const data = [
@@ -120,15 +121,18 @@ const Footer = () => {
     const year = date.getFullYear()
     return (
         <footer className='bg-black/5 h-[539.96px] flex flex-col justify-end gap-y-20 items-end px-20'>
-            <div className='w-1/2 flex justify-between items-start'>
-                {data.map((item, index) => (
-                    <div key={index} className='space-y-5'>
-                        <h3 className='text-[#8428E0] font-bold'>{item.header}</h3>
-                        {item.links.map((item,index)=>(
-                            <h4 key={index} className='text-[#5F697C]'>{item.name}</h4>
-                        ))}
-                    </div>
-                ))}
+            <div className='flex w-full justify-between items-center'>
+                <Image src={logo} alt='logo' width={200} />
+                <div className='w-1/2 flex justify-between items-start'>
+                    {data.map((item, index) => (
+                        <div key={index} className='space-y-5'>
+                            <h3 className='text-[#8428E0] font-bold'>{item.header}</h3>
+                            {item.links.map((item,index)=>(
+                                <h4 key={index} className='text-[#5F697C]'>{item.name}</h4>
+                            ))}
+                        </div>
+                    ))}
+                </div>
             </div>
             <div className='h-[92px] w-full border-t-2 border-black flex justify-between items-center'>
                 <div className='flex gap-x-4 justify-between items-center'>

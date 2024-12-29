@@ -6,9 +6,11 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <nav className='flex justify-between p-4 h-28 items-center'>
-        <Image src={logo} alt='' width={150} height={0} />
+        <Link href={'/'}>
+            <Image src={logo} alt='' width={150} height={0} />
+        </Link>
         <div className='flex justify-between w-1/3 font-bold'>
-            <Link className='flex justify-center items-center' href={''}>
+            <Link className='flex justify-center items-center' href={'/products'}>
                 <button>Products</button>
             </Link>
             <Link className='flex justify-center items-center' href={'/sales'}>
