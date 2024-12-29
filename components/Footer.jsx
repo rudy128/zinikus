@@ -1,4 +1,11 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import Facebook from '@/app/assets/facebook.svg'
+import Instagram from '@/app/assets/instagram.svg'
+import Youtube from '@/app/assets/youtube.svg'
+import Twitter from '@/app/assets/twitter.svg'
+import Linkedin from '@/app/assets/linkedin.svg'
 
 const Footer = () => {
     const data = [
@@ -85,28 +92,28 @@ const Footer = () => {
     const socialMedia = [
         {
             name:'Facebook',
-            image: '',
-            link: ''
+            image: Facebook,
+            link: 'https://facebook.com'
         },
         {
             name:'Instagram',
-            image: '',
-            link: ''
+            image: Instagram,
+            link: 'https://instagram.com'
         },
         {
             name:'Youtube',
-            image: '',
-            link: ''
+            image: Youtube,
+            link: 'https://youtube.com'
         },
         {
             name:'Twitter',
-            image: '',
-            link: ''
+            image: Twitter,
+            link: 'https://twitter.com'
         },
         {
             name:'Linkedin',
-            image: '',
-            link: ''
+            image: Linkedin,
+            link: 'https://linkedin.com'
         }
     ]
     const date = new Date()
@@ -126,7 +133,9 @@ const Footer = () => {
             <div className='h-[92px] w-full border-t-2 border-black flex justify-between items-center'>
                 <div className='flex gap-x-4 justify-between items-center'>
                     {socialMedia.map((item,index)=>(
-                        <div key={index}>{item.name}</div>
+                        <Link key={index} href={item.link}>
+                            <Image src={item.image} alt={item.name}/>
+                        </Link>
                     ))}
                 </div>
                 <h1 className=''>©{year} Zinikus. All rights reserved.</h1>
