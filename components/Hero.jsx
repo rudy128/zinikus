@@ -1,23 +1,39 @@
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import React from 'react'
+// import Video from 'next-video'
+// import Video1 from "@/videos/video1.mp4.json"
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Hero = () => {
   return (
-    <div className='h-[680px] relative px-10 flex flex-col justify-center gap-y-4 items-start bg-black text-white'>
+    <div className='h-[680px] relative overflow-hidden flex flex-col justify-center gap-y-4 items-start text-white'>
+        <div className='px-10'>
         <h1 className='text-7xl font-bold'>Robotics Redefined</h1>
         <p className='text-xl leading-loose font-bold'>Explore cutting-edge robotics solutions engineered to tackle<br/>
         today&apos;s toughest automation challenges</p>
-        <Link className='group relative -bottom-12 rounded-3xl px-4 py-2 border border-white' href={''}>
+        <Link className={`group relative -bottom-12 rounded-3xl px-4 py-2 border border-white ${inter.className}`} href={''}>
             <button>Explore Solutions{' '}
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                <span className="inline-block text-xl transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
                 </span>
             </button>
         </Link>
+        </div>
+        <Videos src='/video1.mp4' />
     </div>
+  )
+}
+
+
+
+export const Videos = ({src}) => {
+  return(
+      <video className='absolute w-[100%] -z-10 object-cover h-screen' autoPlay loop muted>
+      <source src={src} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   )
 }
 
