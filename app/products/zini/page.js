@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Image from 'next/image'
 import React from 'react'
+import ZiniTransparent from '@/app/assets/zini-transparent.svg'
 
 const page = () => {
   return (
@@ -19,14 +20,15 @@ const Product = ()=>{
   return (
     <div className='w-full'>
         <div className='px-10 mt-20'>
-          <h1 className='font-bold text-7xl'>Your teammate, your tool.<br />Meet Spot</h1>
-          <div className='flex justify-between items-center'>
-            <p className='font-medium text-3xl'>We are dedicated to creating cutting-edge technology that pushes 
+        <h1 className='font-bold text-7xl 2xl:mx-12'>Your teammate, your tool.<br />Meet Spot</h1>
+          <div className='flex justify-evenly'>
+            <div className='mt-20 w-2/3 flex flex-col gap-y-20'><p className='font-medium text-3xl'>We are dedicated to creating cutting-edge technology that pushes 
 the boundaries of what&apos;s possible in the world of automation.
 Our team is composed of experts in various fields.</p>
-<Image className='bg-black' src={''} alt='' width={701} height={423} />
+<button className='rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white'>Learn More</button>
+</div>
+<Image src={ZiniTransparent} alt='' width={416} height={600} />
           </div>
-          <button className='rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white'>Learn More</button>
           <p className='font-medium pt-40 mb-20 text-3xl pl-40'>With 360° perception and athletic intelligence, we solved the tough robotics<br />challenges out of the box so you can make your operations more resilient.</p>
         </div>
         {/* <Image className='bg-black w-full' src={''} alt='' height={806} width="100%" /> */}
