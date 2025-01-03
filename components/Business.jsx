@@ -1,5 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
+import Zini from '@/app/assets/zini.svg'
+import Zoro from '@/app/assets/zoro.svg'
+import Zeno from '@/app/assets/zeno.svg'
+
 
 const Business = () => {
   return (
@@ -8,17 +12,25 @@ const Business = () => {
             <h1 className='text-7xl font-bold'>Your teammate, your tool.<br />Meet Spot.</h1>
             <h4 className='font-bold text-sm'>We are dedicated to creating cutting-edge technology that pushes<br/>the boundaries of what&apos;s possible in the world of automation.<br/>Our team is composed of experts in various fields, including robotics,<br/>machine learning, computer science, and engineering.<br/>Together, we&apos;re creating a future where robots can perform<br/>complex tasks with ease, making our lives easier and more efficient.</h4>
             <button className='bg-[#0f0e1733] px-4 py-3 rounded-3xl font-bold'>Learn About Spot</button>
-            <Image src='' alt='' width={827} className='absolute -bottom-[25rem] xl:-bottom-[20rem] right-5 xl:right-[15rem] bg-black' height={582} />
+            <Image src={Zini} alt='' width={520} height={900} className='absolute -bottom-[25rem] xl:-bottom-[20rem] z-10 right-5 xl:right-[15rem]' />
         </div>
-        <div className='h-[990px] flex justify-start p-10 items-end bg-gradient-to-br from-[#00D9F5] via-[#4879EA] to-[#8428E0]'>
-            <div className='flex gap-x-10'>
-                <Image src='' alt='' width={576} className='bg-black' height={601} />
-                <div className='w-2/3 text-white space-y-10'>
-                    <h1 className='text-7xl font-bold'>The Future of Warehouse Automation</h1>
+        <div className='h-[1425px] relative flex justify-start p-10 pb-0 items-center bg-gradient-to-br from-[#27272d] to-85% to-[#8428e0]'>
+            <div className='flex gap-x-10  w-full'>
+                <div className='flex flex-col gap-y-40 ml-[8%]'>
+                <Image src={Zoro} alt='' width={460} height={900} />
+                <h1 className='text-6xl my-auto font-bold text-white'>The Future of<br/>Warehouse</h1>
+                </div>
+                <div className='w-1/2 mx-auto self-center text-white space-y-10'>
+                    <h1 className='text-6xl font-bold'>The Future of<br />Warehouse<br />Automation</h1>
                     <p className='text-xl'>Use Strech to streamline case<br/>handling and trailer unloading<br/>operations. Easy to deploy and<br/>flexible, Strech keeps your<br/>operations moving.</p>
                     <button className='text-lg font-bold border rounded-full px-4 py-2'>Learn About Strech</button>
                 </div>
             </div>
+            <Image src={Zeno} alt='' width={500} height={720} className='absolute -bottom-full xl:-bottom-[20rem] right-5 xl:right-[15rem]' />
+        </div>
+        <div className='space-y-10 ml-[10%] relative py-12'>
+            <h4 className='font-bold text-sm'>We are dedicated to creating cutting-edge technology that pushes<br/>the boundaries of what&apos;s possible in the world of automation.<br/>Our team is composed of experts in various fields, including robotics,<br/>machine learning, computer science, and engineering.<br/>Together, we&apos;re creating a future where robots can perform<br/>complex tasks with ease, making our lives easier and more efficient.</h4>
+            <button className='bg-[#0f0e1733] px-4 py-3 rounded-3xl font-bold'>Learn About Spot</button>
         </div>
         <div className='px-12 space-y-5 mt-32'>
             <h1 className='text-7xl font-bold'>Solutions for the real world</h1>

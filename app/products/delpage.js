@@ -3,25 +3,25 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Image from 'next/image'
 import React from 'react'
-import Zini from '@/app/assets/zini.svg'
-import Zeno from '@/app/assets/zeno.svg'
-import Zoro from '@/app/assets/zoro.svg'
+// import Zini from '@/app/assets/zini.svg'
+// import Zeno from '@/app/assets/zeno.svg'
+// import Zoro from '@/app/assets/zoro.svg'
 
 const page = () => {
   const data = [
     {
       name: 'ZINI',
-      image: Zini,
+      image: '',
       dark: false
     },
     {
       name: 'ZENO',
-      image: Zeno,
+      image: '',
       dark: true
     },
     {
       name: 'ZORO',
-      image: Zoro,
+      image: '',
       dark: false
     }
   ]
