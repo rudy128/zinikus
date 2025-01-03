@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from './Hero'
 import Image from 'next/image'
+import OurServices from './OurServices'
 
 const ContactUs = () => {
   return (
@@ -14,6 +15,7 @@ perform complex tasks with ease, making our lives easier and more efficient.<br 
 to working with partners who share our vision. We&apos;re excited to be at the forefront of this exciting field and look forward to pushing the boundaries of what&apos;s 
 possible in the world of A.I. and robotics.</p>
         </div>
+        <OurServices />
         <div className=''>
             <h1 className='font-bold text-6xl pl-32'>Featured Resources</h1>
             <div className='h-[600px] w-full flex justify-evenly items-center'>
