@@ -40,3 +40,13 @@ body {
 .bgProduct{
   background: linear-gradient(135deg, rgba(15,0,30,1) 0%, rgba(31,7,55,1) 27%, rgba(52,16,88,1) 54%,rgba(54,17,92,1) 72%, rgba(84,26,143,1) 100%);
 }
+
+.child{
+  display: hidden;
+}
+.parent:hover{
+  width: 230px;
+}
+.parent:hover .child{
+  display: block;
+}
