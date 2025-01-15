@@ -44,9 +44,9 @@ body {
 .child{
   display: hidden;
 }
-.parent:hover{
+/* .parent:hover{
   width: 230px;
-}
+} */
 .parent:hover .child{
   display: block;
 }
