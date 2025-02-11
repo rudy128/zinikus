@@ -120,10 +120,10 @@ const Footer = () => {
     const date = new Date()
     const year = date.getFullYear()
     return (
-        <footer className='bg-black/5 h-[539.96px] flex flex-col justify-end gap-y-20 items-end px-20'>
-            <div className='flex w-full justify-between items-center'>
+        <footer className='bg-black/5 h-[539.96px] flex flex-col justify-around gap-y-20 items-end px-20'>
+            <div className='flex w-full justify-between items-start'>
                 <Image src={logo} alt='logo' width={200} />
-                <div className='w-1/2 flex justify-between items-start'>
+                <div className='w-1/2 flex justify-between items-start mt-10'>
                     {data.map((item, index) => (
                         <div key={index} className='space-y-5'>
                             <h3 className='text-[#8428E0] font-bold'>{item.header}</h3>

@@ -37,7 +37,7 @@ const SalesForm = () => {
                 <input type="text" placeholder='Use Case*' className='border-b border-black w-full focus:outline-none focus:border-green-500 focus:border-b' />
                 <textarea name="" id="" placeholder='What Are your Intended Applications?' className='border-b border-black w-full focus:outline-none focus:border-green-500 focus:border-b' rows={10}/>
             </div>
-            <p className='text-[13px]'>Boston Dynamics is committed to your privacy. We will not share your data with any 
+            <p className='text-[13px]'>Zinkus is committed to your privacy. We will not share your data with any 
 third parties. We use the information you provide us to send you product news & 
 updates, information about events, and other announcements. You may unsubscribe 
 from these communications at any time. For more information, check out our Privacy

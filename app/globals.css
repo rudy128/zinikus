@@ -103,3 +103,7 @@ body {
 .space-x-12 > * + * {
   margin-left: 3rem; /* Adds spacing between images */
 }
+
+ul {
+  list-style-type: disc;
+}

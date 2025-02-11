@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import Hero from '@/components/Hero'
+import {HeroProducts} from '@/components/Hero'
 import Image from 'next/image'
 import React from 'react'
 import ZoroTransparent from '@/app/assets/zoro_transparent.svg'
@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div>
         <Header />
-        <Hero />
+        <HeroProducts padding={"ml-[23.5%]"} />
         <Product />
         <Footer />
     </div>
@@ -22,41 +22,57 @@ const page = () => {
 const Product = ()=>{
   return (
     <div className='w-full'>
-        <div className='px-10 mt-20'>
-        <h1 className='font-bold text-7xl 2xl:mx-12'>Your partner in service. Meet ZORO.</h1>
-          <div className='flex justify-evenly'>
-            <div className='mt-20 w-2/3 flex flex-col gap-y-20'><p className='font-medium text-3xl'>ZORO is an intelligent catering and food delivery robot designed for seamless, efficient, and contactless service. Whether in restaurants, hotels, or corporate spaces, it delivers meals with speed, precision, and reliability, transforming the food service experience.</p>
-<button className='rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white'>Learn More</button>
-</div>
-<Image className='self-start' src={ZoroTransparent} alt='' width={416} height={600} />
+        <div className=' mt-20 flex flex-col'>
+          <div className='flex ml-28'>
+            <div className='flex flex-col w-3/10 items-center'>
+        <h1 className='font-bold text-7xl mt-10 pl-[330px]'>Your partner in service.<br/>Meet ZORO.</h1>
+        <div className='mt-10 w-fit flex flex-col ml-2 gap-y-10'>
+          <p className='font-medium text-2xl text-[#545454]'>ZORO is an intelligent catering and food<br/>delivery robot designed for seamless,<br/>efficient, and contactless service. Whether in<br/>restaurants, hotels, or corporate spaces, it<br/>delivers meals with speed, precision, and<br/>reliability, transforming the food service<br/>experience.</p>
+          <button className='rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white'>Learn More</button>
           </div>
-          <p className='font-medium pt-20 mb-20 text-3xl pl-40'>With 360° perception and athletic intelligence, we solved the tough robotics<br />challenges out of the box so you can make your operations more resilient.</p>
+            </div>
+<Image src={ZoroTransparent} alt='' width={504} height={864} />
+          </div>
+          <p className='font-medium mb-20 text-3xl text-center'>With 360° perception and athletic intelligence, we solved the tough robotics<br />challenges out of the box so you can make your operations more resilient.</p>
+
         </div>
-        {/* <Image className='bg-black w-full' src={''} alt='' height={806} width="100%" /> */}
         <div className='w-full bg-black h-[806px]' />
-        <section className='px-10 py-20'>
-            <h1 className='text-6xl font-bold'>Redefine your day-to-day with ZORO.</h1>
-            <p className='text-3xl font-medium mt-8'>From bustling restaurants to hotel dining and  corporate events, ZORO works so your team can  focus on delivering exceptional service. As a smart  food delivery and catering assistant, ZORO ensures  seamless meal distribution, optimized workflow, and  enhanced customer experience. It navigates  efficiently, reduces wait times, and minimizes human  effort in high-demand environments. With ZORO,  your team can prioritize guest satisfaction while  ensuring smooth and hassle-free operations.</p>
-            <div className='flex mt-20 gap-x-20'>
-              <div className='w-1/2 flex flex-col gap-y-10'>
-              <Link href={''} className='text-[#240247] text-5xl font-bold'><h1>Smart Catering</h1></Link>
-              <Link href={''} className='text-[#B4AEBA] text-5xl font-bold'><h1>Human Interaction</h1></Link>
-              <Link href={''} className='text-[#B4AEBA] text-5xl font-bold'><h1>Smart Routing</h1></Link>
+        <section className='px-10 py-20 relative flex justify-center items-center flex-col'>
+            <h1 className='text-5xl px-60 font-bold w-full'>Redefine your day-to-day with ZORO.</h1>
+            <p className='text-2xl text-[#545454] px-60 w-full font-medium mt-8'>ZORO helps your team focus on exceptional service by streamlining food delivery and catering. It ensures seamless meal distribution, optimized workflow, and enhanced customer experience while reducing wait times and effort in high-demand environments.</p>
+            <div className='flex mt-20 ml-40 mx-60'>
+              <div className='w-[25em] flex ml-20 flex-col gap-y-10'>
+              <Link href={''} className='text-[#240247] text-3xl font-bold'><h1>Smart Catering</h1></Link>
+              <Link href={''} className='text-[#B4AEBA] text-3xl font-bold'><h1>Human Interaction</h1></Link>
+              <Link href={''} className='text-[#B4AEBA] text-3xl font-bold'><h1>Smart Routing</h1></Link>
               </div>
               <div className='flex flex-col gap-y-10'>
                 <Image src={ZoroGrey} alt='' width={938} height={555} />
                 <div className='flex flex-col gap-y-7'>
-                  <h1 className='text-6xl font-bold'>Smart Catering</h1>
-                  <p className='text-2xl font-medium'>ZORO&apos;s smart catering system streamlines  food service with precision and efficiency, ensuring timely  deliveries and seamless coordination. Equipped with  autonomous navigation and intelligent scheduling, it  optimizes workflow in restaurants, hotels, and events.</p>
-                </div>
-                {/* <div className='flex flex-col gap-y-7'>
-                  <h1 className='text-6xl font-bold'>Human</h1>
-                  <p className='text-2xl font-medium'>Basic Text info self-produced</p>
+                  <h1 className='text-4xl font-bold'>Smart Catering</h1>
+                  <ul className='ml-5'>
+                    <li className='text-2xl text-[#545454] mr-16 font-medium'>ZORO&apos;s smart catering system streamlines food service.</li>
+                    <li className='text-2xl text-[#545454] mr-16 font-medium'>Ensures timely deliveries and seamless coordination.</li>
+                    <li className='text-2xl text-[#545454] mr-16 font-medium'>Features autonomous navigation and intelligent scheduling.</li>
+                    <li className='text-2xl text-[#545454] mr-16 font-medium'>Optimizes workflow in restaurants, hotels, and events.</li>
+                  </ul>
                 </div>
                 <div className='flex flex-col gap-y-7'>
-                  <h1 className='text-6xl font-bold'>Ad Analytics</h1>
-                  <p className='text-2xl font-medium'>ZEPHYR&apos;s Ads Analytics feature tracks and analyzes customer  interactions, providing real-time insights to optimize your  advertising strategy. With smart data collection and  analysis, it helps boost engagement and measure campaign  success with precision</p>
-                </div> */}
+                  <h1 className='text-4xl font-bold'>Human Interaction</h1>
+                  <ul className='ml-5'>
+                    <li className='text-2xl mr-16 text-[#545454] font-medium'>ZENO elevates the guest experience with smart, interactive concierge service.</li>
+                    <li className='text-2xl mr-16 text-[#545454] font-medium'>Offers personalized greetings, seamless navigation, and real-time assistance.</li>
+                    <li className='text-2xl mr-16 text-[#545454] font-medium'>Combines advanced technology with a welcoming presence in hospitality.</li>
+                  </ul>
+                </div>
+                <div className='flex flex-col gap-y-7'>
+                  <h1 className='text-4xl font-bold'>Smart Routing</h1>
+                  <ul className='ml-5'>
+                    <li className='text-2xl mr-16 text-[#545454] font-medium'>ZORO is an intelligent catering and food delivery robot.</li>
+                    <li className='text-2xl mr-16 text-[#545454] font-medium'>Provides seamless, efficient, and contactless service.</li>
+                    <li className='text-2xl mr-16 text-[#545454] font-medium'>Delivers meals with speed, precision, and reliability.</li>
+                  </ul>
+                </div>
               </div>
             </div>
         </section>

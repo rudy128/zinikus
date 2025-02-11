@@ -38,6 +38,281 @@ const Partners = () => {
             image: ostLabz,
             link: 'https://www.ostlabz.co.in/',
         },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
+        {
+            name: 'StartupNews.fyi',
+            image: startupnews,
+            link: 'https://startupnews.fyi/',
+        },
+        {
+            name: 'Agility',
+            image: agility,
+            link: 'https://www.linkedin.com/company/agilityventures/',
+        },
+        {
+            name: 'InfoTech Smart Trading LLC',
+            image: infoTech,
+            link: 'https://www.infotechuae.com/',
+        },
+        {
+            name: 'Nvidia',
+            image: nvidia,
+            link: 'https://www.nvidia.com/en-in/',
+        },
+        {
+            name: 'OstLabz',
+            image: ostLabz,
+            link: 'https://www.ostlabz.co.in/',
+        },
     ];
 
     useEffect(() => {
@@ -61,16 +336,16 @@ const Partners = () => {
     }, [isHovered]);
 
     return (
-        <div className="bg-black/65 w-5/6 py-6 mx-auto min-h-[163px] m-10 text-white flex flex-col justify-center items-center font-bold">
+        <div className="bg-black/35 w-4/6 py-6 mx-auto min-h-[163px] m-10 overflow-hidden px-10 text-white flex flex-col justify-center items-center font-bold">
             <h1>Trusted by industry-leading organizations around the world</h1>
             <div
-                className="relative w-full overflow-hidden mt-5"
+                className="relative overflow-hidden w-full  mt-5"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <div
                     ref={containerRef}
-                    className="flex space-x-12"
+                    className="flex space-x-24"
                     style={{ whiteSpace: 'nowrap' }}
                 >
                     {[...data, ...data].map((item, index) => (

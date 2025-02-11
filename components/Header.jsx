@@ -9,119 +9,27 @@ import ZoroTransparent from '@/app/assets/zoro-transparent.svg'
 
 const Header = () => {
   return (
-    <nav className='flex relative justify-between p-[3%] h-16 items-center' suppressHydrationWarning={true}>
+    <nav className='flex justify-between px-[3%] sticky bg-white/90 top-0 z-50 left-0 backdrop-blur-md h-16 items-center' suppressHydrationWarning={true}>
         <Link href={'/'}>
-            <Image src={logo} alt='' width={150} height={0} />
+            <Image src={logo} alt='' width={120} height={0} />
         </Link>
-        <div className='flex justify-evenly w-1/3 font-bold'>
-            <Link className='flex justify-center items-center' href={'/'}>
-                <button>Home</button>
+        <div className='flex w-1/3 justify-evenly font-bold'>
+            <Link className='flex text-xl justify-center items-center' href={'/'}>
+                <button className='px-10'>Home</button>
             </Link>
-            <div className='flex group hover:h-[130px] justify-center items-center'>
-                <button>Products</button>
-                <div className='absolute hidden group-hover:block top-full pt-2 pl-5 z-50 h-[350px] '>
-                    <div className='w-full relative h-full flex'>
-                    <div className='h-full w-[280px] overflow-hidden flex flex-col items-center text-white'>
-                    <Link className='w-full rounded-t-3xl hover:bg-[#3f225f] flex parent justify-between px-8 bg-[#49286E] border-b border-[#959393] py-2' href={'/products/zephyr'} >
-                        <div>Zephyr</div>
-                        <Image src={ChevronRight}  alt='Chevron Right'  width={25} height={25} />
-                        <div className='w-[424px] h-[227px] child bg-white text-black -right-[152%] absolute hidden shadow-md rounded-xl border mx-auto px-8'>
-                        {/* <div className='space-y-16 shadow-md rounded-xl py-4 border w-11/12 h-11/12 mx-auto mt-1 px-8'> */}
-                        <div className='flex justify-around  items-center'>
-                        <h1 className='font-semibold text-2xl'>ZINI</h1>
-                        <Image src={ZiniTransparent} alt='Zini' width={90} height={90}   />
-                        </div>
-                        <div className='grid grid-rows-1 grid-cols-2 gap-5'>
-                            <div>
-                                <h3 className='text-xs font-semibold'>ABC</h3>
-                                <p className='text-[8px] font-normal'>Orbit is your portal for real-time fleet 
-management and analysis. Eliminate 
-guesswork, make informed decisions, 
-and increase efficiency throughout your facility.
-</p>
-                            </div>
-                            <div>
-                                <h3 className='text-xs font-semibold'>ABC</h3>
-                                <p className='text-[8px] font-normal'>Orbit is your portal for real-time fleet 
-management and analysis. Eliminate 
-guesswork, make informed decisions, 
-and increase efficiency throughout your facility.
-</p>
-                            </div>
-                        </div>
-                        {/* </div> */}
-
-                    </div>
-                    </Link>
-                    <Link className='w-full px-8 parent hover:bg-[#3f225f] flex justify-between bg-[#49286E] border-b border-[#959393] py-2' href={'/products/zeno'} >
-                        <div>Zeno</div>
-                        <Image src={ChevronRight}  alt='Chevron Right'  width={25} height={25} />
-                        <div className='w-[424px] h-[227px] child bg-white text-black -right-[152%] absolute hidden shadow-md rounded-xl border mx-auto px-8'>
-                        {/* <div className='space-y-16 shadow-md rounded-xl py-4 border w-11/12 h-11/12 mx-auto mt-1 px-8'> */}
-                        <div className='flex justify-around  items-center'>
-                        <h1 className='font-semibold text-2xl'>ZENO</h1>
-                        <Image src={ZenoTransparent} alt='Zini' width={90} height={90}   />
-                        </div>
-                        <div className='grid grid-rows-1 grid-cols-2 gap-5'>
-                            <div>
-                                <h3 className='text-xs font-semibold'>ABC</h3>
-                                <p className='text-[8px] font-normal'>Orbit is your portal for real-time fleet 
-management and analysis. Eliminate 
-guesswork, make informed decisions, 
-and increase efficiency throughout your facility.
-</p>
-                            </div>
-                            <div>
-                                <h3 className='text-xs font-semibold'>ABC</h3>
-                                <p className='text-[8px] font-normal'>Orbit is your portal for real-time fleet 
-management and analysis. Eliminate 
-guesswork, make informed decisions, 
-and increase efficiency throughout your facility.
-</p>
-                            </div>
-                        </div>
-                        {/* </div> */}
-
-                    </div>
-                    </Link>
-                    <Link className='w-full parent px-8 rounded-b-3xl hover:bg-[#3f225f] flex justify-between bg-[#49286E] border-b border-[#959393] py-2' href={'/products/zoro'} >
-                        <div>Zoro</div>
-                        <Image src={ChevronRight}  alt='Chevron Right'  width={25} height={25} />
-                        <div className='w-[424px] h-fit pb-8 child bg-white text-black -right-[152%] absolute hidden shadow-md rounded-xl border mx-auto px-8'>
-                        {/* <div className='space-y-16 shadow-md rounded-xl py-4 border w-11/12 h-11/12 mx-auto mt-1 px-8'> */}
-                        <div className='flex justify-around  items-center'>
-                        <h1 className='font-semibold text-2xl'>ZORO</h1>
-                        <Image src={ZoroTransparent} alt='Zini' width={90} height={90}   />
-                        </div>
-                        <div className='grid grid-rows-1 grid-cols-2 gap-5'>
-                            <div>
-                                <h3 className='text-xs font-semibold'>ABC</h3>
-                                <p className='text-[8px] font-normal'>Orbit is your portal for real-time fleet 
-management and analysis. Eliminate 
-guesswork, make informed decisions, 
-and increase efficiency throughout your facility.
-</p>
-                            </div>
-                            <div>
-                                <h3 className='text-xs font-semibold'>ABC</h3>
-                                <p className='text-[8px] font-normal'>Orbit is your portal for real-time fleet 
-management and analysis. Eliminate 
-guesswork, make informed decisions, 
-and increase efficiency throughout your facility.
-</p>
-                            </div>
-                        </div>
-                        {/* </div> */}
-
-                    </div>
-                    </Link>
-                    </div>
+            <div className='flex group text-xl hover:h-[80px] hover:mt-8 hover:pt-3 hover:bg-[#F6F5F5] justify-center items-center hover:items-start'>
+                <button className='px-10'>Products</button>
+                <div className='absolute hidden group-hover:block w-[310px] ml-36 top-full py-6 z-50 rounded-b-md bg-[#F6F5F5]'>
+                    <div className='flex justify-center items-center flex-col gap-y-10'>
+                        <Link href={'/products/zeno'} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Zeno</h4></Link>
+                        <Link href={'/products/zephyr'} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Zephyr</h4></Link>
+                        <Link href={'/products/zoro'} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Zoro</h4></Link>
                     </div>
                 </div>
             </div>
-            <div className='flex group hover:h-[80px] hover:mt-8 hover:pt-3 hover:bg-[#F6F5F5] justify-center items-center hover:items-start'>
+            <div className='flex group text-xl hover:h-[80px] hover:mt-8 mr-5 hover:pt-3 hover:bg-[#F6F5F5] justify-center items-center hover:items-start'>
                 <button className='px-10'>More</button>
-                <div className='absolute hidden group-hover:block w-[310px] ml-48 top-full py-6 z-50 bg-[#F6F5F5]'>
+                <div className='absolute hidden group-hover:block w-[310px] ml-[182px] top-full py-6 z-50 rounded-b-md bg-[#F6F5F5]'>
                     <div className='flex justify-center items-center flex-col gap-y-10'>
                         <Link href={''} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Blog</h4></Link>
                         <Link href={''} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Warranty</h4></Link>
@@ -130,7 +38,7 @@ and increase efficiency throughout your facility.
             </div>
         </div>
             <Link className='min-w-[137.55px] self-center py-3 min-h-[38.02px] bg-gradient-to-r from-[#8428E0] to-black flex justify-center items-center rounded-3xl font-medium' href={'/contact-sales'}>
-                <button className='bg-white text-black rounded-full px-4 font-medium text-sm'>Contact Sales</button>
+                <button className='text-white rounded-full px-4 font-medium text-sm'>Contact Sales</button>
             </Link>
     </nav>
   )

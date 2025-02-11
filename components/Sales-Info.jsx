@@ -12,8 +12,8 @@ import Link from 'next/link'
 const Info = () => {
   return (
     <div className='h-[1060px] px-10 xl:px-32 py-32 space-y-6'>
-        <h1 className='text-4xl font-bold'>Start your journey with Spot</h1>
-        <p className=''>Spot is an agile mobile robot that enables safer, more efficient and more<br />
+        <h1 className='text-4xl font-bold'>Start your journey with Zeno</h1>
+        <p className=''>Zeno is an agile mobile robot that enables safer, more efficient and more<br />
 predictable operations. Contact our expert sales team today to find the right<br />
 implementation to meet your application needs and start your journey to<br />
 a simple, scalable robotics solution.</p>
