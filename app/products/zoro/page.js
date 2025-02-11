@@ -3,7 +3,9 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Image from 'next/image'
 import React from 'react'
-import ZoroTransparent from '@/app/assets/zoro-transparent.svg'
+import ZoroTransparent from '@/app/assets/zoro_transparent.svg'
+import ZoroGrey from '@/app/assets/zoro-grey.svg'
+import Link from 'next/link'
 
 
 const page = () => {
@@ -21,11 +23,9 @@ const Product = ()=>{
   return (
     <div className='w-full'>
         <div className='px-10 mt-20'>
-        <h1 className='font-bold text-7xl 2xl:mx-12'>Your teammate, your tool.<br />Meet Spot</h1>
+        <h1 className='font-bold text-7xl 2xl:mx-12'>Your partner in service. Meet ZORO.</h1>
           <div className='flex justify-evenly'>
-            <div className='mt-20 w-2/3 flex flex-col gap-y-20'><p className='font-medium text-3xl'>We are dedicated to creating cutting-edge technology that pushes 
-the boundaries of what&apos;s possible in the world of automation.
-Our team is composed of experts in various fields.</p>
+            <div className='mt-20 w-2/3 flex flex-col gap-y-20'><p className='font-medium text-3xl'>ZORO is an intelligent catering and food delivery robot designed for seamless, efficient, and contactless service. Whether in restaurants, hotels, or corporate spaces, it delivers meals with speed, precision, and reliability, transforming the food service experience.</p>
 <button className='rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white'>Learn More</button>
 </div>
 <Image className='self-start' src={ZoroTransparent} alt='' width={416} height={600} />
@@ -34,65 +34,32 @@ Our team is composed of experts in various fields.</p>
         </div>
         {/* <Image className='bg-black w-full' src={''} alt='' height={806} width="100%" /> */}
         <div className='w-full bg-black h-[806px]' />
-        <div className='px-20 my-20'>
-          <h1 className='font-bold text-6xl'>Solutions for the real world</h1>
-          <p className='text-[#5F697C] text-xl'>Give your team the toold to make work better: find solutions to keep your operations<br />productive and keep your perople safe.</p>
-          <div className='flex gap-x-10 justify-center'>
-          <div className='w-[440.33px] h-[380px] bg-[#0f001e] flex flex-col justify-evenly items-center text-white'>
-            <Image src={''} alt='' width={375} className='bg-[#5F697C]' height={230} />
-            <div className='w-full px-8 space-y-2'>
-            <h3 className='font-bold text-4xl'>Inspection</h3>
-            <button className='font-bold'>Learn More</button>
-            </div>
-          </div>
-          <div className='w-[440.33px] h-[380px] bg-[#0f001e] flex flex-col justify-evenly items-center text-white'>
-            <Image src={''} alt='' width={375} className='bg-[#5F697C]' height={230} />
-            <div className='w-full px-8 space-y-2'>
-            <h3 className='font-bold text-4xl'>Inspection</h3>
-            <button className='font-bold'>Learn More</button>
-            </div>
-          </div>
-          <div className='w-[440.33px] h-[380px] bg-[#0f001e] flex flex-col justify-evenly items-center text-white'>
-            <Image src={''} alt='' width={375} className='bg-[#5F697C]' height={230} />
-            <div className='w-full px-8 space-y-2'>
-            <h3 className='font-bold text-4xl'>Inspection</h3>
-            <button className='font-bold'>Learn More</button>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div className='bgProduct text-white font-bold w-full px-28 pt-12 h-[642px]'>
-          <div className='flex justify-between items-center w-full'>
-          <h1 className='text-4xl font-bold'>Featured Resources</h1>
-          <button>View All Resources</button>
-          </div>
-          <div className='flex justify-center items-center w-full gap-x-10 pt-20'>
-            <div className='w-[405.33px] h-[343.82px]'>
-              <Image className='bg-black' src={""} alt='' width={405} height={230} />
-              <div className='w-full flex gap-x-4 py-2'>
-                <p className='text-[#8428E0] font-bold text-xs'>Blog</p>
-                <p className='text-[#98999D] font-bold text-xs'>7 min read</p>
+        <section className='px-10 py-20'>
+            <h1 className='text-6xl font-bold'>Redefine your day-to-day with ZORO.</h1>
+            <p className='text-3xl font-medium mt-8'>From bustling restaurants to hotel dining and  corporate events, ZORO works so your team can  focus on delivering exceptional service. As a smart  food delivery and catering assistant, ZORO ensures  seamless meal distribution, optimized workflow, and  enhanced customer experience. It navigates  efficiently, reduces wait times, and minimizes human  effort in high-demand environments. With ZORO,  your team can prioritize guest satisfaction while  ensuring smooth and hassle-free operations.</p>
+            <div className='flex mt-20 gap-x-20'>
+              <div className='w-1/2 flex flex-col gap-y-10'>
+              <Link href={''} className='text-[#240247] text-5xl font-bold'><h1>Smart Catering</h1></Link>
+              <Link href={''} className='text-[#B4AEBA] text-5xl font-bold'><h1>Human Interaction</h1></Link>
+              <Link href={''} className='text-[#B4AEBA] text-5xl font-bold'><h1>Smart Routing</h1></Link>
               </div>
-              <h4 className='font-bold text-[#24.9px]'>Making Every step Count with<br />Spot</h4>
-            </div>
-            <div className='w-[405.33px] h-[343.82px]'>
-              <Image className='bg-black' src={""} alt='' width={405} height={230} />
-              <div className='w-full flex gap-x-4 py-2'>
-                <p className='text-[#8428E0] font-bold text-xs'>Blog</p>
-                <p className='text-[#98999D] font-bold text-xs'>7 min read</p>
+              <div className='flex flex-col gap-y-10'>
+                <Image src={ZoroGrey} alt='' width={938} height={555} />
+                <div className='flex flex-col gap-y-7'>
+                  <h1 className='text-6xl font-bold'>Smart Catering</h1>
+                  <p className='text-2xl font-medium'>ZORO&apos;s smart catering system streamlines  food service with precision and efficiency, ensuring timely  deliveries and seamless coordination. Equipped with  autonomous navigation and intelligent scheduling, it  optimizes workflow in restaurants, hotels, and events.</p>
+                </div>
+                {/* <div className='flex flex-col gap-y-7'>
+                  <h1 className='text-6xl font-bold'>Human</h1>
+                  <p className='text-2xl font-medium'>Basic Text info self-produced</p>
+                </div>
+                <div className='flex flex-col gap-y-7'>
+                  <h1 className='text-6xl font-bold'>Ad Analytics</h1>
+                  <p className='text-2xl font-medium'>ZEPHYR&apos;s Ads Analytics feature tracks and analyzes customer  interactions, providing real-time insights to optimize your  advertising strategy. With smart data collection and  analysis, it helps boost engagement and measure campaign  success with precision</p>
+                </div> */}
               </div>
-              <h4 className='font-bold text-[#24.9px]'>Making Every step Count with<br />Spot</h4>
             </div>
-            <div className='w-[405.33px] h-[343.82px]'>
-              <Image className='bg-black' src={""} alt='' width={405} height={230} />
-              <div className='w-full flex gap-x-4 py-2'>
-                <p className='text-[#8428E0] font-bold text-xs'>Blog</p>
-                <p className='text-[#98999D] font-bold text-xs'>7 min read</p>
-              </div>
-              <h4 className='font-bold text-[#24.9px]'>Making Every step Count with<br />Spot</h4>
-            </div>
-          </div>
-        </div>
+        </section>
     </div>
   )
 }
