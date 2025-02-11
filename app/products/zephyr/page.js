@@ -33,7 +33,7 @@ Our team is composed of experts in various fields.</p>
         </div>
         {/* <Image className='bg-black w-full' src={''} alt='' height={806} width="100%" /> */}
         <div className='w-full bg-black h-[806px]' />
-        <div className='px-20 my-20'>
+        {/* <div className='px-20 my-20'>
           <h1 className='font-bold text-6xl'>Solutions for the real world</h1>
           <p className='text-[#5F697C] text-xl'>Give your team the toold to make work better: find solutions to keep your operations<br />productive and keep your perople safe.</p>
           <div className='flex gap-x-10 justify-center'>
@@ -91,7 +91,16 @@ Our team is composed of experts in various fields.</p>
               <h4 className='font-bold text-[#24.9px]'>Making Every step Count with<br />Spot</h4>
             </div>
           </div>
-        </div>
+        </div> */}
+        <section>
+          <div>
+            <h1>Redefine door-to-door with ZEPHYR</h1>
+            <p>From vibrant stores to high-end showrooms and  corporate spaces, ZEPHYR is here to let your team focus on  delivering outstanding service. As a smart, interactive  ambassador, ZEPHYR enhances every customer experience  by guiding, informing, and assisting with ease. It  navigates seamlessly, ensuring optimal flow while  reducing wait times and human effort. With ZEPHYR, your  team can prioritize customer engagement and  satisfaction, all while ensuring smooth, efficient  operations. Let ZEPHYR take your brand’s interaction to the  next level.</p>
+            <div>
+              <div><h1>Next-Level</h1><h1>Ads</h1></div>
+            </div>
+          </div>
+        </section>
     </div>
   )
 }

@@ -9,7 +9,7 @@ import ZoroTransparent from '@/app/assets/zoro-transparent.svg'
 
 const Header = () => {
   return (
-    <nav className='flex relative justify-between px-4 h-16 items-center' suppressHydrationWarning={true}>
+    <nav className='flex relative justify-between p-[3%] h-16 items-center' suppressHydrationWarning={true}>
         <Link href={'/'}>
             <Image src={logo} alt='' width={150} height={0} />
         </Link>
@@ -22,8 +22,8 @@ const Header = () => {
                 <div className='absolute hidden group-hover:block top-full pt-2 pl-5 z-50 h-[350px] '>
                     <div className='w-full relative h-full flex'>
                     <div className='h-full w-[280px] overflow-hidden flex flex-col items-center text-white'>
-                    <Link className='w-full rounded-t-3xl hover:bg-[#3f225f] flex parent justify-between px-8 bg-[#49286E] border-b border-[#959393] py-2' href={'/products/zini'} >
-                        <div>Zini</div>
+                    <Link className='w-full rounded-t-3xl hover:bg-[#3f225f] flex parent justify-between px-8 bg-[#49286E] border-b border-[#959393] py-2' href={'/products/zephyr'} >
+                        <div>Zephyr</div>
                         <Image src={ChevronRight}  alt='Chevron Right'  width={25} height={25} />
                         <div className='w-[424px] h-[227px] child bg-white text-black -right-[152%] absolute hidden shadow-md rounded-xl border mx-auto px-8'>
                         {/* <div className='space-y-16 shadow-md rounded-xl py-4 border w-11/12 h-11/12 mx-auto mt-1 px-8'> */}
@@ -119,9 +119,15 @@ and increase efficiency throughout your facility.
                     </div>
                 </div>
             </div>
-            <Link className='flex justify-center items-center' href={'/research'}>
-                <button>Research</button>
-            </Link>
+            <div className='flex group hover:h-[80px] hover:mt-8 hover:pt-3 hover:bg-[#F6F5F5] justify-center items-center hover:items-start'>
+                <button className='px-10'>More</button>
+                <div className='absolute hidden group-hover:block w-[310px] ml-48 top-full py-6 z-50 bg-[#F6F5F5]'>
+                    <div className='flex justify-center items-center flex-col gap-y-10'>
+                        <Link href={''} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Blog</h4></Link>
+                        <Link href={''} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Warranty</h4></Link>
+                    </div>
+                </div>
+            </div>
         </div>
             <Link className='min-w-[137.55px] self-center py-3 min-h-[38.02px] bg-gradient-to-r from-[#8428E0] to-black flex justify-center items-center rounded-3xl font-medium' href={'/contact-sales'}>
                 <button className='bg-white text-black rounded-full px-4 font-medium text-sm'>Contact Sales</button>

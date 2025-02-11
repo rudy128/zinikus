@@ -9,18 +9,18 @@ const inter = Inter({ subsets: ['latin'] })
 const Hero = () => {
   return (
     <div className='h-[680px] relative overflow-hidden flex flex-col justify-center gap-y-4 items-start text-white'>
-        <div className='px-10'>
-        <h1 className='text-7xl font-bold'>Robotics Redefined</h1>
-        <p className='text-xl leading-loose font-bold'>Explore cutting-edge robotics solutions engineered to tackle<br/>
+        <div className='ml-[5%] flex flex-col'>
+        <h1 className='text-7xl heading-appear font-bold'>Robotics Redefined</h1>
+        <p className='text-xl paragraph-appear leading-loose font-bold'>Explore cutting-edge robotics solutions engineered to tackle<br/>
         today&apos;s toughest automation challenges</p>
-        <Link className={`group relative -bottom-24 rounded-3xl px-4 py-2 border border-white ${inter.className}`} href={''}>
+        </div>
+        <Link className={`group relative button-appear -bottom-24 ml-[5%] rounded-3xl px-4 py-2 border border-white ${inter.className}`} href={''}>
             <button>Explore Solutions{' '}
                 <span className="inline-block text-xl transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
                 </span>
             </button>
         </Link>
-        </div>
         <Videos src='/video1.mp4' />
     </div>
   )

@@ -50,3 +50,56 @@ body {
 .parent:hover .child{
   display: block;
 }
+
+@keyframes appearFromBelow {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading-appear {
+  display: inline-block; /* Ensures the text is treated as a block for animation */
+  opacity: 0; /* Start invisible */
+  animation: appearFromBelow 1s ease-out forwards; /* Animation with easing */
+}
+
+.paragraph-appear {
+  display: inline-block; /* Ensures the text is treated as a block for animation */
+  opacity: 0; /* Start invisible */
+  animation: appearFromBelow 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.button-appear {
+  display: inline-block; /* Ensures the text is treated as a block for animation */
+  opacity: 0; /* Start invisible */
+  animation: appearFromBelow 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+.space-x-12 > * + * {
+  margin-left: 3rem; /* Adds spacing between images */
+}
