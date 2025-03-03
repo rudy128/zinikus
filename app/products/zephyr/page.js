@@ -42,14 +42,16 @@ const Product = ()=>{
             <h1 className='text-5xl px-60 font-bold w-full'>Redefine door-to-door with ZEPHYR</h1>
             <p className='text-2xl text-[#545454] px-60 w-full font-medium mt-8'>ZEPHYR enhances customer experiences in stores, showrooms, and corporate spaces. As a smart, interactive ambassador, it guides, informs, and assists seamlessly, reducing wait times and human effort. ZEPHYR helps your team focus on customer engagement while ensuring smooth operations.</p>
             <div className='flex mt-20 ml-40 mx-60'>
-              <div className='w-[25em] flex ml-20 flex-col gap-y-10'>
-              <Link href={''} className='text-[#240247] text-3xl font-bold'><h1>Next-Level Ads</h1></Link>
-              <Link href={''} className='text-[#B4AEBA] text-3xl font-bold'><h1>Human Attraction</h1></Link>
-              <Link href={''} className='text-[#B4AEBA] text-3xl font-bold'><h1>Ad Analytics</h1></Link>
+              <div id='scroll-container' className='w-[25em] ml-20 relative'>
+                <div id='link-container' className='flex flex-col gap-y-10 sticky top-32 h-fit'>
+                  <Link href={'#next-level-ads'} className='text-[#240247] text-3xl font-bold'><h1>Next-Level Ads</h1></Link>
+                  <Link href={'#human-attraction'} className='text-[#B4AEBA] text-3xl font-bold'><h1>Human Attraction</h1></Link>
+                  <Link href={'#ad-analytics'} className='text-[#B4AEBA] text-3xl font-bold'><h1>Ad Analytics</h1></Link>
+                </div>
               </div>
               <div className='flex flex-col gap-y-10'>
                 <Image src={ZephyrGrey} alt='' width={938} height={555} />
-                <div className='flex flex-col gap-y-7'>
+                <div id='next-level-ads' className='flex flex-col gap-y-7'>
                   <h1 className='text-4xl font-bold'>Next-Level Ads</h1>
                   <ul className='ml-5'>
                     <li className='text-2xl text-[#545454] mr-16 font-medium'>Personalized, interactive ads powered by ZEPHYR&apos;s AI.</li>
@@ -58,7 +60,7 @@ const Product = ()=>{
                     <li className='text-2xl text-[#545454] mr-16 font-medium'>Boosts brand visibility and customer engagement.</li>
                   </ul>
                 </div>
-                <div className='flex flex-col gap-y-7'>
+                <div id='human-attraction' className='flex flex-col gap-y-7'>
                   <h1 className='text-4xl font-bold'>Human Attraction</h1>
                   <ul className='ml-5'>
                     <li className='text-2xl mr-16 text-[#545454] font-medium'>ZEPHYR is an advanced robot that enhances customer interactions.</li>
@@ -66,7 +68,7 @@ const Product = ()=>{
                     <li className='text-2xl mr-16 text-[#545454] font-medium'>Ensures a seamless and unforgettable experience every time.</li>
                   </ul>
                 </div>
-                <div className='flex flex-col gap-y-7'>
+                <div id='ad-analytics' className='flex flex-col gap-y-7'>
                   <h1 className='text-4xl font-bold'>Ad Analytics</h1>
                   <ul className='ml-5'>
                     <li className='text-2xl mr-16 text-[#545454] font-medium'>Racks and analyzes customer interactions.</li>
