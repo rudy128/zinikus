@@ -3,10 +3,10 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import logo from '@/app/assets/logo.svg';
 import Link from 'next/link';
-import ChevronRight from '@/app/assets/chevron-right.svg';
-import ZiniTransparent from '@/app/assets/zini-transparent.svg';
-import ZenoTransparent from '@/app/assets/zeno-transparent.svg';
-import ZoroTransparent from '@/app/assets/zoro-transparent.svg';
+// import ChevronRight from '@/app/assets/chevron-right.svg';
+// import ZiniTransparent from '@/app/assets/zini-transparent.svg';
+// import ZenoTransparent from '@/app/assets/zeno-transparent.svg';
+// import ZoroTransparent from '@/app/assets/zoro-transparent.svg';
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -35,7 +35,7 @@ const Header = () => {
 
     const handleMouseMove = (e) => {
       // Check if mouse is in the top 40% of the screen
-      if (e.clientY < window.innerHeight * 0.1) {
+      if (e.clientY < window.innerHeight * 0.4) {
         setIsVisible(true);
       } else if (!scrollingUp) {
         setIsVisible(false);
@@ -63,20 +63,20 @@ const Header = () => {
         </Link>
         <div className='flex group text-xl hover:h-[80px] hover:mt-8 hover:pt-3 hover:bg-[#F6F5F5] justify-center items-center hover:items-start'>
           <button className='px-10'>Products</button>
-          <div className='absolute hidden group-hover:block w-[310px] ml-36 top-full py-6 z-50 rounded-b-md bg-[#F6F5F5]'>
+          <div className={`absolute ${isVisible ? 'hidden' : '-translate-y-full'} group-hover:block w-[310px] ml-[8.7rem] top-full py-6 z-50 rounded-b-md bg-[#F6F5F5]`}>
             <div className='flex justify-center items-center flex-col gap-y-10'>
-              <Link href={'/products/zeno'} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Zeno</h4></Link>
-              <Link href={'/products/zephyr'} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Zephyr</h4></Link>
-              <Link href={'/products/zoro'} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Zoro</h4></Link>
+              <Link href={'/products/zeno'} ><h4 className='font-semibold p-2 px-4 text-xl w-[246px] hover:text-white hover:bg-black'>Zeno</h4></Link>
+              <Link href={'/products/zephyr'} ><h4 className='font-semibold p-2 px-4 text-xl w-[246px] hover:text-white hover:bg-black'>Zephyr</h4></Link>
+              <Link href={'/products/zoro'} ><h4 className='font-semibold p-2 px-4 text-xl w-[246px] hover:text-white hover:bg-black'>Zoro</h4></Link>
             </div>
           </div>
         </div>
         <div className='flex group text-xl hover:h-[80px] hover:mt-8 mr-5 hover:pt-3 hover:bg-[#F6F5F5] justify-center items-center hover:items-start'>
           <button className='px-10'>More</button>
-          <div className='absolute hidden group-hover:block w-[310px] ml-[182px] top-full py-6 z-50 rounded-b-md bg-[#F6F5F5]'>
+          <div className='absolute hidden group-hover:block w-[310px] ml-[11.1rem] top-full py-6 z-50 rounded-b-md bg-[#F6F5F5]'>
             <div className='flex justify-center items-center flex-col gap-y-10'>
-              <Link href={''} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Blog</h4></Link>
-              <Link href={''} ><h4 className='font-semibold p-2 px-4 text-2xl w-[246px] hover:text-white hover:bg-black'>Warranty</h4></Link>
+              <Link href={''} ><h4 className='font-semibold p-2 px-4 text-xl w-[246px] hover:text-white hover:bg-black'>Blog</h4></Link>
+              <Link href={''} ><h4 className='font-semibold p-2 px-4 text-xl w-[246px] hover:text-white hover:bg-black'>Warranty</h4></Link>
             </div>
           </div>
         </div>
