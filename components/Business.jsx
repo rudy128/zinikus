@@ -67,6 +67,7 @@ const Business = () => {
 
   return (
     <>
+         {/*1st section - innovation modularity  */}
       <section className="flex flex-col sm:flex-row justify-center items-center mx-4 sm:mx-8 lg:mx-60 mb-20">
         <div className="w-full sm:w-1/2 space-y-6 sm:space-y-10 ml-0 sm:ml-[5%] relative py-16 sm:py-24 text-center sm:text-left">
           <h1 className="text-2xl sm:text-4xl font-bold opacity-0 animate-[appearFromBelow_1s_ease-out_forwards] [animation-delay:0.5s]">
@@ -93,7 +94,7 @@ const Business = () => {
         </div>
       </section>
 
-      {/* Second Section */}
+      {/* Second Section - zoro */}
       <section
         id="second-section"
         ref={secondSectionRef}
@@ -152,7 +153,7 @@ const Business = () => {
         </div>
       </section>
 
-      {/* Third Section */}
+      {/* Third Section - zephyr */}
       <section
         id="third-section"
         ref={thirdSectionRef}
@@ -195,7 +196,7 @@ const Business = () => {
                 : ""
             }`}
           >
-            Your brand deserves a representative that's smart, efficient, and
+            Your brand deserves a representative that &apos;s smart, efficient, and
             unforgettable. Meet ZEPHYR, the cutting-edge robot designed to
             elevate customer interactions with seamless service and precision.
           </p>
@@ -213,7 +214,7 @@ const Business = () => {
         </div>
       </section>
 
-      {/* Fourth Section */}
+      {/* Fourth Section - zeno*/}
       <section
         id="second-section"
         ref={secondSectionRef}

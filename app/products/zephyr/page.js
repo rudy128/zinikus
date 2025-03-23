@@ -56,7 +56,7 @@ const Product = () => {
         <div className="flex-col gap-x-96">
           <div className="flex justify-center">
             <motion.h1
-              className="font-bold text-7xl mt-10"
+              className="font-bold text-4xl lg:text-7xl mt-10 lg:ml-10"
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -66,34 +66,36 @@ const Product = () => {
               Meet ZEPHYR
             </motion.h1>
           </div>
-          <div className="flex md:flex sm:flex items-center justify-center gap-32">
-            <motion.div
-              className="mt-10 w-fit flex flex-col gap-y-10"
-              initial={{ opacity: 0, x: -50 }}
-              animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            >
-              <p className="font-medium text-2xl text-[#545454]">
-                ZEPHYR is an advanced robot designed to
-                <br />
-                enhance customer interactions. With AI-
-                <br />
-                powered precision, it welcomes guests,
-                <br />
-                and provides information, ensuring a
-                <br />
-                seamless and unforgettable experience
-                <br />
-                every time.
-              </p>
-              <motion.button
-                className="rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
+          <div className=" flex flex-col lg:flex-row items-center justify-center gap-32">
+            <div>
+              <motion.div
+                className="mt-10 w-fit flex flex-col gap-y-10"
+                initial={{ opacity: 0, x: -50 }}
+                animate={inView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               >
-                Learn More
-              </motion.button>
-            </motion.div>
+                <p className="font-medium text-2xl text-[#545454]">
+                  ZEPHYR is an advanced robot designed to
+                  <br />
+                  enhance customer interactions. With AI-
+                  <br />
+                  powered precision, it welcomes guests,
+                  <br />
+                  and provides information, ensuring a
+                  <br />
+                  seamless and unforgettable experience
+                  <br />
+                  every time.
+                </p>
+                <motion.button
+                  className="rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Learn More
+                </motion.button>
+              </motion.div>
+            </div>
 
             <div>
               <motion.div
