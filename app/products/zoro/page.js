@@ -66,13 +66,15 @@ const Product = () => {
               </p>
 
               {/* Animated Button */}
-              <motion.button
-                className="rounded-3xl w-44 bg-black font-bold px-6 py-3 text-white transition-transform duration-300 hover:scale-105"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Learn More
-              </motion.button>
+              <div className="flex justify-center lg:justify-start">
+                <motion.button
+                  className="rounded-3xl w-44 bg-black font-bold px-6 py-3 text-white transition-transform duration-300 hover:scale-105"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Learn More
+                </motion.button>
+              </div>
             </motion.div>
           </motion.div>
 
