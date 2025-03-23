@@ -53,63 +53,68 @@ const Product = () => {
     <div className="w-full">
       {/* 1st sectino */}
       <div ref={ref} className="mt-20 flex flex-col">
-        <motion.h1
-          className="font-bold text-7xl mt-10 pl-[330px]"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          Your Brand&apos;s Best Ambassador.
-          <br />
-          Meet ZEPHYR
-        </motion.h1>
-
-        <div className="flex gap-x-96">
-          <motion.div
-            className="mt-10 w-fit flex flex-col ml-[335px] gap-y-10"
-            initial={{ opacity: 0, x: -50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          >
-            <p className="font-medium text-2xl text-[#545454]">
-              ZEPHYR is an advanced robot designed to
-              <br />
-              enhance customer interactions. With AI-
-              <br />
-              powered precision, it welcomes guests,
-              <br />
-              and provides information, ensuring a
-              <br />
-              seamless and unforgettable experience
-              <br />
-              every time.
-            </p>
-            <motion.button
-              className="rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
+        <div className="flex-col gap-x-96">
+          <div className="flex justify-center">
+            <motion.h1
+              className="font-bold text-7xl mt-10"
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              Learn More
-            </motion.button>
-          </motion.div>
+              Your Brand&apos;s Best Ambassador.
+              <br />
+              Meet ZEPHYR
+            </motion.h1>
+          </div>
+          <div className="flex md:flex sm:flex items-center justify-center gap-32">
+            <motion.div
+              className="mt-10 w-fit flex flex-col gap-y-10"
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            >
+              <p className="font-medium text-2xl text-[#545454]">
+                ZEPHYR is an advanced robot designed to
+                <br />
+                enhance customer interactions. With AI-
+                <br />
+                powered precision, it welcomes guests,
+                <br />
+                and provides information, ensuring a
+                <br />
+                seamless and unforgettable experience
+                <br />
+                every time.
+              </p>
+              <motion.button
+                className="rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Learn More
+              </motion.button>
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-          >
-            <Image
-              src={ZephyrTransparent}
-              alt=""
-              width={400}
-              height={716}
-              className="-mt-20"
-            />
-          </motion.div>
+            <div>
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                animate={inView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+              >
+                <Image
+                  src={ZephyrTransparent}
+                  alt=""
+                  width={400}
+                  height={716}
+                  className="-mt-20"
+                />
+              </motion.div>
+            </div>
+          </div>
         </div>
 
         <motion.p
-          className="font-medium pt-10 mb-20 text-3xl text-center"
+          className="font-medium pt-10 mb-20 text-3xl flex justify-center"
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
@@ -124,9 +129,9 @@ const Product = () => {
       {/* 2nd section */}
       <div className="w-full bg-black h-[806px]" />
       {/* 3rd section */}
-      <section className="px-10 py-20 relative flex justify-center items-center flex-col">
+      <section className="px-6 md:px-10 py-20 relative flex justify-center items-center flex-col">
         <motion.h1
-          className="text-5xl px-60 font-bold w-full"
+          className="text-3xl md:text-5xl px-4 md:px-60 font-bold w-full text-center"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -135,7 +140,7 @@ const Product = () => {
         </motion.h1>
 
         <motion.p
-          className="text-2xl text-[#545454] px-60 w-full font-medium mt-8"
+          className="text-lg md:text-2xl text-[#545454] px-4 md:px-60 w-full font-medium mt-6 text-center md:text-left"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -147,18 +152,21 @@ const Product = () => {
           smooth operations.
         </motion.p>
 
-        <div className="flex mt-20 ml-40 mx-60">
+        <div className="flex flex-col md:flex-row mt-16 md:mt-20 md:ml-40 md:mx-60 items-center md:items-start">
           {/* Left Sidebar Navigation */}
-          <div id="scroll-container" className="w-[25em] ml-20 relative">
+          <div
+            id="scroll-container"
+            className="w-full md:w-[25em] md:ml-20 relative mb-10 md:mb-0 text-center md:text-left"
+          >
             <div
               id="link-container"
-              className="flex flex-col gap-y-10 sticky top-32 h-fit"
+              className="flex md:flex-col gap-y-6 md:gap-y-10 md:sticky top-32 h-fit"
             >
               {["next-level-ads", "human-attraction", "ad-analytics"].map(
                 (section) => (
                   <Link key={section} href={`#${section}`}>
                     <motion.h1
-                      className={`text-3xl font-bold ${
+                      className={`text-xl md:text-3xl font-bold ${
                         activeSection === section
                           ? "text-[#240247]"
                           : "text-[#B4AEBA]"
@@ -176,13 +184,20 @@ const Product = () => {
           </div>
 
           {/* Right Content Section */}
-          <div className="flex flex-col gap-y-10">
+          <div className="flex flex-col gap-y-8 md:gap-y-10 items-center md:items-start">
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
+              className="w-full flex justify-center md:justify-start"
             >
-              <Image src={ZephyrGrey} alt="Zephyr" width={938} height={555} />
+              <Image
+                src={ZephyrGrey}
+                alt="Zephyr"
+                width={300}
+                height={180}
+                className="md:w-[938px] md:h-[555px]"
+              />
             </motion.div>
 
             {/* Feature Sections */}
@@ -220,17 +235,19 @@ const Product = () => {
               <motion.div
                 key={feature.id}
                 id={feature.id}
-                className="flex flex-col gap-y-7"
+                className="flex flex-col gap-y-4 md:gap-y-7 text-center md:text-left"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
               >
-                <h1 className="text-4xl font-bold">{feature.title}</h1>
-                <ul className="ml-5">
+                <h1 className="text-2xl md:text-4xl font-bold">
+                  {feature.title}
+                </h1>
+                <ul className="ml-5 space-y-2">
                   {feature.points.map((point, i) => (
                     <li
                       key={i}
-                      className="text-2xl text-[#545454] mr-16 font-medium"
+                      className="text-lg md:text-2xl text-[#545454] font-medium"
                     >
                       {point}
                     </li>

@@ -32,19 +32,19 @@ const Product = () => {
   return (
     <div className="w-full">
       {/* 1st section */}
-      <div className="mt-20 flex flex-col">
-        <div className="flex ml-28">
+      <div className="mt-20 flex flex-col items-center">
+        <div className="flex flex-col sm:flex-row items-center">
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="flex flex-col w-3/10 items-center"
+            className="flex flex-col w-full sm:w-3/10 items-center sm:items-start text-center sm:text-left px-4 sm:px-0"
           >
             <motion.h1
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="font-bold text-7xl mt-10 pl-[330px]"
+              className="font-bold text-4xl sm:text-7xl mt-10 sm:pl-[160px]"
             >
               A Smarter Welcome,
               <br />
@@ -55,19 +55,19 @@ const Product = () => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="mt-10 w-fit flex flex-col ml-40 gap-y-10"
+              className="mt-6 sm:mt-10 w-full sm:w-fit flex flex-col sm:ml-40 gap-y-6 sm:gap-y-10"
             >
-              <p className="font-medium text-2xl text-[#545454]">
+              <p className="font-medium text-lg sm:text-2xl text-[#545454] leading-relaxed">
                 ZENO is a smart, interactive concierge that
-                <br />
+                <br className="hidden sm:block" />
                 elevates the guest experience. With
-                <br />
+                <br className="hidden sm:block" />
                 personalized greetings, seamless navigation,
-                <br />
+                <br className="hidden sm:block" />
                 and real-time service assistance, ZENO blends
-                <br />
+                <br className="hidden sm:block" />
                 cutting-edge technology with a warm, welcoming
-                <br />
+                <br className="hidden sm:block" />
                 presence, redefining the future of hospitality.
               </p>
 
@@ -75,7 +75,7 @@ const Product = () => {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.6 }}
-                className="rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white"
+                className="rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white mx-auto sm:mx-0"
               >
                 Learn More
               </motion.button>
@@ -86,8 +86,15 @@ const Product = () => {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
+            className="mt-10 sm:mt-0 flex justify-center"
           >
-            <Image src={ZenoTransparent} alt="ZENO" width={366} height={716} />
+            <Image
+              src={ZenoTransparent}
+              alt="ZENO"
+              width={366}
+              height={716}
+              className="w-64 sm:w-[366px]"
+            />
           </motion.div>
         </div>
 
@@ -95,15 +102,16 @@ const Product = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
-          className="font-medium pt-20 mb-20 text-3xl text-center"
+          className="font-medium pt-10 sm:pt-20 mb-10 sm:mb-20 text-xl sm:text-3xl text-center px-4 sm:px-0"
         >
           With 360° perception and athletic intelligence, we solved the tough
           robotics
-          <br />
+          <br className="hidden sm:block" />
           challenges out of the box so you can make your operations more
           resilient.
         </motion.p>
       </div>
+
       {/* 2nd section */}
       <div className="w-full bg-black h-[806px]" />
       {/* 3rd section */}
@@ -112,14 +120,14 @@ const Product = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.8 }}
-        className="px-10 py-20 relative flex justify-center items-center flex-col"
+        className="px-5 sm:px-10 py-20 relative flex justify-center items-center flex-col"
       >
         {/* Main Heading */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl px-60 font-bold w-full text-center"
+          className="text-3xl sm:text-5xl px-5 sm:px-60 font-bold w-full text-center"
         >
           Redefine Customer Service with ZENO
         </motion.h1>
@@ -129,7 +137,7 @@ const Product = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-2xl text-[#545454] px-60 w-full font-medium mt-8 text-center"
+          className="text-lg sm:text-2xl text-[#545454] px-5 sm:px-60 w-full font-medium mt-6 sm:mt-8 text-center"
         >
           ZENO is a smart, interactive ambassador designed to enhance customer
           experiences in stores, showrooms, and corporate spaces. It guides,
@@ -140,17 +148,17 @@ const Product = () => {
         </motion.p>
 
         {/* Container for Links & Image/Features */}
-        <div className="flex mt-20 ml-40 mx-60">
+        <div className="flex flex-col sm:flex-row mt-12 sm:mt-20 sm:ml-40 sm:mx-60">
           {/* Left Links */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-[25em] ml-20 relative"
+            className="w-full sm:w-[25em] sm:ml-20 relative mb-10 sm:mb-0"
           >
             <motion.div
               id="link-container"
-              className="flex flex-col gap-y-10 sticky top-32 h-fit"
+              className="flex flex-col gap-y-6 sm:gap-y-10 sticky top-32 h-fit text-center sm:text-left"
             >
               {[
                 {
@@ -170,7 +178,7 @@ const Product = () => {
                 >
                   <Link
                     href={`#${link.id}`}
-                    className={`text-3xl font-bold ${
+                    className={`text-2xl sm:text-3xl font-bold ${
                       index === 0 ? "text-[#240247]" : "text-[#B4AEBA]"
                     }`}
                   >
@@ -190,8 +198,15 @@ const Product = () => {
                 isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }
               }
               transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex justify-center"
             >
-              <Image src={ZenoGrey} alt="Zeno Grey" width={938} height={555} />
+              <Image
+                src={ZenoGrey}
+                alt="Zeno Grey"
+                width={938}
+                height={555}
+                className="w-full sm:w-[938px]"
+              />
             </motion.div>
 
             {/* Feature Sections */}
@@ -233,10 +248,12 @@ const Product = () => {
                   isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
                 }
                 transition={{ duration: 0.8, delay: 1.0 + index * 0.3 }}
-                className="flex flex-col gap-y-7"
+                className="flex flex-col gap-y-6 sm:gap-y-7"
               >
-                <h1 className="text-4xl font-bold">{feature.title}</h1>
-                <ul className="ml-5">
+                <h1 className="text-3xl sm:text-4xl font-bold text-center sm:text-left">
+                  {feature.title}
+                </h1>
+                <ul className="ml-0 sm:ml-5 text-center sm:text-left">
                   {feature.points.map((point, i) => (
                     <motion.li
                       key={i}
@@ -248,7 +265,7 @@ const Product = () => {
                         duration: 0.5,
                         delay: 1.1 + index * 0.3 + i * 0.1,
                       }}
-                      className="text-2xl text-[#545454] mr-16 font-medium"
+                      className="text-lg sm:text-2xl text-[#545454] font-medium"
                     >
                       {point}
                     </motion.li>
