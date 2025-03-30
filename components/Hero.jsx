@@ -33,7 +33,7 @@ const Hero = () => {
 
 const HeroProducts = ({padding}) => {
   return (
-    <div className='h-[680px] relative overflow-hidden flex flex-col justify-center gap-y-4 items-start text-white px-4 sm:px-8 lg:px-16'>
+    <div className='h-[680px] relative overflow-hidden flex flex-col justify-center gap-y-4 items-start text-white '>
         <div className={`${padding} flex flex-col`}>
             <h1 className='text-4xl sm:text-5xl lg:text-7xl heading-appear font-bold'>
                 Robotics Redefined

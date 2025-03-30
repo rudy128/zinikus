@@ -4,7 +4,7 @@ import startupnews from '@/app/assets/startupnews.jpeg';
 import agility from '@/app/assets/agility.jpeg';
 import infoTech from '@/app/assets/infotech.jpeg';
 import nvidia from '@/app/assets/nvidia.jpg';
-import ostLabz from '@/app/assets/ostlabz.png';
+import ostLabz from '@/app/assets/ost.png';
 import React, { useRef, useEffect, useState } from 'react';
 
 const Partners = () => {
