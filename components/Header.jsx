@@ -7,6 +7,7 @@ import { Sheet,SheetContent, SheetHeader, SheetBody, SheetFooter, SheetTrigger, 
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import { Menu, X } from 'lucide-react'; // Importing Lucide icons
 import { SearchCheck } from 'lucide-react';
+import { Button } from './ui/button';
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -69,21 +70,21 @@ const Header = () => {
             <AccordionItem value="products">
               <AccordionTrigger>Products</AccordionTrigger>
               <AccordionContent>
-                <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
-                  <li><Link className='hover:underline text-center w-full text-xl' href={'/products/zeno'}>Zeno</Link></li>
-                  <li><Link className='hover:underline text-center w-full text-xl' href={'/products/zephyr'}>Zephyr</Link></li>
-                  <li><Link className='hover:underline text-center w-full text-xl' href={'/products/zoro'}>Zoro</Link></li>
-                </ul>
+                <div className='flex flex-col gap-y-4 pl-10'>
+                  <Link className='hover:underline text-xl border-5 border-black rounded-lg' href={'/products/zeno'}><Button className="bg-white text-black p-1 text-xl hover:bg-black/20">Zeno</Button></Link>
+                  <Link className='hover:underline text-xl' href={'/products/zephyr'}><Button className="bg-white text-black p-1 text-xl hover:bg-black/20">Zephyr</Button></Link>
+                  <Link className='hover:underline text-xl' href={'/products/zoro'}><Button className="bg-white text-black p-1 text-xl hover:bg-black/20">Zoro</Button></Link>
+                </div>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="more">
               <AccordionTrigger>More</AccordionTrigger>
               <AccordionContent>
-                <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
-                  <li><Link className='hover:underline text-center w-full text-xl' href={'/blogs'}>Blogs</Link></li>
-                  <li><Link className='hover:underline text-center w-full text-xl' href={'/warranty'}>Warranty</Link></li>
-                </ul>
+                <div className='flex flex-col gap-y-4 pl-10'>
+                  <Link className='hover:underline text-xl' href={'/blogs'}><Button className="bg-white text-black p-1 text-xl hover:bg-black/20">Blogs</Button></Link>
+                  <Link className='hover:underline text-xl' href={'/warranty'}><Button className="bg-white text-black p-1 text-xl hover:bg-black/20">Warranty</Button></Link>
+                </div>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
