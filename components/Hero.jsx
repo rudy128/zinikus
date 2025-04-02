@@ -34,7 +34,7 @@ const Hero = () => {
 const HeroProducts = ({padding}) => {
   return (
     <div className='h-[680px] relative overflow-hidden flex flex-col justify-center gap-y-4 items-start text-white '>
-        <div className={`${padding} flex flex-col`}>
+        <div className={`${padding} ml-[5%] sm:ml-[10%] lg:ml-[23.5%] flex flex-col`}>
             <h1 className='text-4xl sm:text-5xl lg:text-7xl heading-appear font-bold'>
                 Robotics Redefined
             </h1>
@@ -43,7 +43,7 @@ const HeroProducts = ({padding}) => {
                 today&apos;s toughest automation challenges
             </p>
         </div>
-        <Link className={`group relative button-appear -bottom-24 ${padding} rounded-3xl px-6 py-3 border border-white ${inter.className}`} href={''}>
+        <Link className={`group relative button-appear -bottom-24 ${padding} ml-[5%] sm:ml-[10%] lg:ml-[23.5%] rounded-3xl px-6 py-3 border border-white ${inter.className}`} href={''}>
             <button className='text-base sm:text-xl'>
                 Explore Solutions{' '}
                 <span className="inline-block text-xl transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
