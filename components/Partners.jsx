@@ -336,7 +336,7 @@ const Partners = () => {
     }, [isHovered]);
 
     return (
-        <div className="bg-black/35 w-4/6 py-6 mx-auto min-h-[163px] m-10 overflow-hidden px-10 text-white flex flex-col justify-center items-center font-bold">
+        <div className="bg-black/35 lg:w-10/12 xl:w-4/6 py-6 mx-auto min-h-[163px] m-10 overflow-hidden px-10 text-white flex flex-col justify-center items-center font-bold">
             <h1>Trusted by industry-leading organizations around the world</h1>
             <div
                 className="relative overflow-hidden w-full  mt-5"
@@ -345,7 +345,7 @@ const Partners = () => {
             >
                 <div
                     ref={containerRef}
-                    className="flex space-x-24"
+                    className="flex space-x-12 lg:space-x-24"
                     style={{ whiteSpace: 'nowrap' }}
                 >
                     {[...data, ...data].map((item, index) => (

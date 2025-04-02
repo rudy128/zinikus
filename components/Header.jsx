@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Sheet,SheetContent, SheetHeader, SheetBody, SheetFooter, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import { Menu, X } from 'lucide-react'; // Importing Lucide icons
+import { SearchCheck } from 'lucide-react';
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -49,7 +50,7 @@ const Header = () => {
 
   return (
     <nav className={`flex justify-between px-[3%] w-full sticky shadow-lg bg-white/90 top-0 z-50 left-0 backdrop-blur-md h-16 items-center transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className='flex justify-center items-center gap-x-10'>
+      <div className='flex justify-center items-center gap-x-5'>
       <div className='md:hidden'>
       <Sheet>
         <SheetTrigger>
@@ -91,7 +92,8 @@ const Header = () => {
 
       </div>
       <Link href={'/'}>
-        <Image src={logo} alt='' width={120} height={0} />
+        <Image src={logo} className='hidden md:block' alt='' width={120} height={0} />
+        <Image src={logo} className='md:hidden' alt='' width={90} height={0} />
       </Link>
       </div>
 
@@ -103,7 +105,7 @@ const Header = () => {
           </Link>
           <div className='flex group text-xl hover:h-[80px] hover:mt-8 hover:pt-3 hover:bg-[#F6F5F5] justify-center items-center hover:items-start'>
             <button className='px-10'>Products</button>
-            <div className={`absolute ${isVisible ? 'hidden' : '-translate-y-full'} group-hover:block w-[310px] ml-[8.6rem] top-full py-6 z-50 rounded-b-md bg-[#F6F5F5]`}>
+            <div className={`absolute ${isVisible ? 'hidden' : 'opacity-0'} group-hover:block w-[310px] ml-[8.6rem] top-full py-6 z-50 rounded-b-md bg-[#F6F5F5]`}>
               <div className='flex justify-center items-center flex-col gap-y-10'>
                 <Link href={'/products/zeno'} ><h4 className='font-semibold p-2 px-4 text-xl w-[246px] hover:text-white hover:bg-black'>Zeno</h4></Link>
                 <Link href={'/products/zephyr'} ><h4 className='font-semibold p-2 px-4 text-xl w-[246px] hover:text-white hover:bg-black'>Zephyr</h4></Link>
@@ -163,8 +165,9 @@ const Header = () => {
       </Sheet> */}
 
       {/* Contact Sales Button */}
-      <Link className='min-w-[137.55px] self-center py-3 min-h-[38.02px] bg-gradient-to-r from-[#8428E0] to-black flex justify-center items-center rounded-3xl font-medium' href={'/contact-sales'}>
-        <button className='text-white rounded-full px-4 font-medium text-sm'>Contact Sales</button>
+      <Link className='md:min-w-[137.55px] w-24 self-center md:py-3 md:min-h-[38.02px] bg-gradient-to-r from-[#8428E0] to-black flex justify-center items-center rounded-3xl font-medium' href={'/contact-sales'}>
+        <button className='text-white rounded-full px-4 font-medium text-xs md:text-sm hidden md:block'>Contact Sales</button>
+        <button className='text-white rounded-full px-4 py-2 font-medium text-xs md:hidden flex justify-center items-center gap-x-2'><SearchCheck size={12} />Contact</button>
       </Link>
     </nav>
   );
