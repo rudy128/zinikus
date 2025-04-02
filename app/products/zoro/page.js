@@ -266,12 +266,6 @@ const page = () => {
 // };
 
 const ProductMobile = () => {
-  const [activeSection, setActiveSection] = useState("#smart-catering");
-
-  const handleScroll = (section) => {
-    setActiveSection(section);
-  };
-
   return (
     <div className="w-full lg:hidden">
       {/* 1st section */}
@@ -536,7 +530,7 @@ const ProductZeno = () => {
             <h1 className="font-bold text-5xl md:text-7xl mt-10 text-center lg:text-left">
               Your partner in service.
               <br />
-              Meet ZORO.
+              Meet <span className="text-[#240247]"> ZORO.</span>
             </h1>
 
             <motion.div
