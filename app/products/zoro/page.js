@@ -21,7 +21,7 @@ const page = () => {
   return (
     <div>
       <Header />
-      <HeroProducts />
+      <HeroProducts padding={'lg:ml-[3%]'} />
       <ProductZeno />
       <ProductMobile />
       <Footer />

@@ -42,13 +42,13 @@ const Footer = () => {
             ]
         }
     ]
-
+    
     const socialMedia = [
-        { name:'Facebook', image: Facebook, link: 'https://facebook.com' },
-        { name:'Instagram', image: Instagram, link: 'https://instagram.com' },
-        { name:'Youtube', image: Youtube, link: 'https://youtube.com' },
-        { name:'Twitter', image: Twitter, link: 'https://twitter.com' },
-        { name:'Linkedin', image: Linkedin, link: 'https://linkedin.com' }
+        // { name:'Facebook', image: Facebook, link: 'https://facebook.com' },
+        { name:'Instagram', image: Instagram, link: 'https://www.instagram.com/zinikus/' },
+        { name:'Youtube', image: Youtube, link: 'https://www.youtube.com/@ZinikusAI' },
+        { name:'Twitter', image: Twitter, link: 'https://x.com/ZinikusAI' },
+        { name:'Linkedin', image: Linkedin, link: 'https://www.linkedin.com/company/zinikus-ai/' }
     ]
 
     const date = new Date()

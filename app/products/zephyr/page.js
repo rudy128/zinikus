@@ -19,7 +19,7 @@ const page = () => {
   return (
     <div>
       <Header />
-      <HeroProducts padding={"ml-[18%]"} />
+      <HeroProducts padding={"ml-[18%] lg:ml-[3%]"} />
       <ProductPC />
       <ProductMobile />
       <Footer />
@@ -79,7 +79,7 @@ const ProductMobile = () => {
 
               {/* Animated Button */}
               {/* <Link href="#redefine"> */}
-              <Link className="mx-auto" href='redefine2'>
+              <Link className="mx-auto" href='#redefine2'>
                 <motion.button
                   className="rounded-3xl w-44 bg-black font-bold self-center px-6 py-3 text-white transition-transform duration-300 hover:scale-105"
                   whileHover={{ scale: 1.1 }}
@@ -313,6 +313,7 @@ const ProductPC = () => {
                 <br />
                 experience every time.
               </p>
+              <Link href='#redefine'>
               <motion.button
                 className="rounded-3xl bg-black font-bold w-[155px] h-[44px] text-white"
                 whileHover={{ scale: 1.1 }}
@@ -320,6 +321,7 @@ const ProductPC = () => {
               >
                 Learn More
               </motion.button>
+              </Link>
             </motion.div>
 
             <div>
@@ -372,6 +374,7 @@ const ProductPC = () => {
       >
         {/* Main Heading */}
         <motion.h1
+        id="redefine"
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.8, delay: 0.2 }}

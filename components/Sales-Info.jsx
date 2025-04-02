@@ -37,19 +37,19 @@ a simple, scalable robotics solution.</p>
     <h3 className='text-sm font-bold'>Follow Us</h3>
     </div>
     <div className='flex px-[56px] gap-x-5'>
-        <Link href="https://facebook.com">
+        {/* <Link href="https://facebook.com">
             <Image src={Facebook} alt='Facebook' />
-        </Link>
-        <Link href="https://instagram.com">
+        </Link> */}
+        <Link href='https://www.instagram.com/zinikus/'>
             <Image src={Instagram} alt='Instagram' />
         </Link>
-        <Link href="https://youtube.com">
+        <Link href='https://www.youtube.com/@ZinikusAI'>
             <Image src={Youtube} alt='Youtube' />
         </Link>
-        <Link href="https://twitter.com">
+        <Link href='https://x.com/ZinikusAI'>
             <Image src={Twitter} alt='Twitter' />
         </Link>
-        <Link href="https://linkedin.com">
+        <Link href='https://www.linkedin.com/company/zinikus-ai/'>
             <Image src={Linkedin} alt='Linkedin' />
         </Link>
     </div>

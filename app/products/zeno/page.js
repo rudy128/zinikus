@@ -16,7 +16,7 @@ const page = () => {
   return (
     <div>
       <Header />
-      <HeroProducts padding={"ml-[24%]"} />
+      <HeroProducts padding={"ml-[24%] lg:ml-[3%]"} />
       <Product />
       <ProductMobile />
       <Footer />
@@ -75,6 +75,7 @@ const Product = () => {
                 presence, redefining the future of hospitality.
               </p>
 
+              <Link href='#redefine' className="">
               <motion.button
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -83,6 +84,7 @@ const Product = () => {
               >
                 Learn More
               </motion.button>
+              </Link>
             </motion.div>
           </motion.div>
 
@@ -125,6 +127,7 @@ const Product = () => {
             </div>
       {/* 3rd section */}
       <motion.section
+        id="redefine"
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
