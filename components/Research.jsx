@@ -141,7 +141,7 @@ const Research = () => {
                     return (
                         <motion.article 
                             key={index} 
-                            className='w-full h-fit flex flex-col justify-between bg-white shadow-lg rounded-lg p-5 transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl'
+                            className='w-full h-[400px] flex flex-col justify-between bg-white shadow-lg rounded-lg p-5 transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl'
                             initial={{ opacity: 0, y: 100 }} 
                             animate={{ opacity: 1, y: 0 }} 
                             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -174,7 +174,7 @@ const Research = () => {
                     return (
                         <motion.article 
                             key={index} 
-                            className='w-full h-fit flex flex-col justify-between bg-white shadow-lg rounded-lg p-5 transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl'
+                            className='w-full h-[400px] flex flex-col justify-between bg-white shadow-lg rounded-lg p-5 transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl'
                             initial={{ opacity: 0, y: 100 }} 
                             whileInView={{ opacity: 1, y: 0 }} 
                             viewport={{ once: true, amount: 0.2 }}
