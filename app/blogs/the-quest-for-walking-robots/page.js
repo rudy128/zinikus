@@ -73,7 +73,7 @@ const page = () => {
         >
           <motion.p className="text-xl md:text-2xl" variants={fadeInUp}>
             In robotics, a common question arises: does a lifelike robot need to
-            walk like a human? According to our Co-Founder, Tanay Yadav, "We
+            walk like a human? According to our Co-Founder, Tanay Yadav, &ldquo;We
             always strive for more—more innovation, efficiency, adaptability,
             and humanity.
           </motion.p>
@@ -91,7 +91,7 @@ const page = () => {
           </motion.p>
           <motion.p className="text-xl md:text-2xl" variants={fadeInUp}>
             Still, the fascination persists. People often ask if ZENO,
-            Zinikus&apos; Lobby Robot, can walk. Tanay says, "It&apos;s
+            Zinikus&apos; Lobby Robot, can walk. Tanay says, &ldquo;It&apos;s
             something people love to see, and they can—at events or
             demonstrations. But walking alone isn&apos;t enough. To truly amaze,
             the robot must run, jump, and move in ways that feel extraordinary.
@@ -99,7 +99,7 @@ const page = () => {
           <motion.p className="text-xl md:text-2xl" variants={fadeInUp}>
             If it can capture just 15% of Francisco Lachowski&apos;s stride,
             Michael Jackson&apos;s dance, and Tyler Durden&apos;s charisma,
-            we&apos;ll have something remarkable."
+            we&apos;ll have something remarkable.&rdquo;
           </motion.p>
           <motion.p className="text-xl md:text-2xl" variants={fadeInUp}>
             To achieve this vision, Zinikus began working on a new humanoid
@@ -142,10 +142,10 @@ const page = () => {
             viewport={{ once: false, amount: 0.2 }}
             variants={scrollVariants}
           >
-            At a toy store, you'll find small walking robots that seem
+            At a toy store, you&apos;ll find small walking robots that seem
             impressive. However, scaling this concept to human size introduces
             new challenges. Smaller robots are easier to move, while larger ones
-            need to balance weight and power efficiency. Most toy robots don't
+            need to balance weight and power efficiency. Most toy robots don&apos;t
             walk like humans—they waddle like penguins.
           </motion.p>
 
@@ -184,9 +184,9 @@ const page = () => {
             viewport={{ once: false, amount: 0.2 }}
             variants={scrollVariants}
           >
-            Tanay humorously notes, "Of course, there are use cases where safety
-            isn't a concern—we could create a 'Terminator' biped. But I believe
-            robotics should protect people, not endanger them."
+            Tanay humorously notes, &ldquo;Of course, there are use cases where safety
+            isn&apos;t a concern—we could create a &apos;Terminator&apos; biped. But I believe
+            robotics should protect people, not endanger them.&rdquo;
           </motion.p>
         </div>
 
@@ -238,9 +238,9 @@ const page = () => {
             viewport={{ once: false, amount: 0.2 }}
             variants={scrollVariants}
           >
-            The upper body's impact on balance is another consideration. By
+            The upper body&apos;s impact on balance is another consideration. By
             integrating Series Elastic Actuators (SEAs) with pneumatic or
-            electric muscles, Zenon's joints will be fast, strong, and precise.
+            electric muscles, Zenon&apos;s joints will be fast, strong, and precise.
           </motion.p>
 
           <motion.p
@@ -273,7 +273,7 @@ const page = () => {
             viewport={{ once: false, amount: 0.2 }}
             variants={scrollVariants}
           >
-            Want to be part of the innovation? Let's connect and explore how our
+            Want to be part of the innovation? Let&apos;s connect and explore how our
             humanoid robot Zenon can bring your vision to life!
           </motion.p>
         </div>
