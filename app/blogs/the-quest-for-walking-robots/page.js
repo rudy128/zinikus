@@ -75,7 +75,7 @@ const page = () => {
             In robotics, a common question arises: does a lifelike robot need to
             walk like a human? According to our Co-Founder, Tanay Yadav, &ldquo;We
             always strive for more—more innovation, efficiency, adaptability,
-            and humanity.
+            and humanity.&rdquo; 
           </motion.p>
           <motion.p className="text-xl md:text-2xl" variants={fadeInUp}>
             Building a walking robot, however, is far from simple. The
@@ -95,12 +95,13 @@ const page = () => {
             something people love to see, and they can—at events or
             demonstrations. But walking alone isn&apos;t enough. To truly amaze,
             the robot must run, jump, and move in ways that feel extraordinary.
-          </motion.p>
-          <motion.p className="text-xl md:text-2xl" variants={fadeInUp}>
             If it can capture just 15% of Francisco Lachowski&apos;s stride,
             Michael Jackson&apos;s dance, and Tyler Durden&apos;s charisma,
             we&apos;ll have something remarkable.&rdquo;
           </motion.p>
+          {/* <motion.p className="text-xl md:text-2xl" variants={fadeInUp}>
+            
+          </motion.p> */}
           <motion.p className="text-xl md:text-2xl" variants={fadeInUp}>
             To achieve this vision, Zinikus began working on a new humanoid
             prototype, Zenon, backed by research funding and government grants.
