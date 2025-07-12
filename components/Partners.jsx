@@ -4,6 +4,7 @@ import startupnews from '@/app/assets/startupnews.jpeg';
 import agility from '@/app/assets/agility.jpeg';
 import infoTech from '@/app/assets/infotech.jpeg';
 import nvidia from '@/app/assets/nvidia.jpg';
+import opendroids from '@/app/assets/opendroids.png';
 import React, { useEffect, useRef, useState } from 'react';
 
 const Partners = () => {
@@ -37,6 +38,11 @@ const Partners = () => {
             name: 'Thrifty AI',
             image: 'https://thriftyai.com/assets/images/logo.png',
             link: 'https://www.thriftyai.com/',
+        },
+        {
+            name: 'Open Droids',
+            image: opendroids,
+            link: 'https://opendroids.com/',
         }
     ];
 
